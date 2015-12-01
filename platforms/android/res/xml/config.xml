@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.tech401.convoy" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="BackgroundGeolocation">
+        <param name="android-package" value="com.transistorsoft.cordova.bggeo.CDVBackgroundGeolocation" />
+    </feature>
+    <allow-intent href="market:*" />
+    <name>HelloCordova</name>
+    <description>
+            A sample Apache Cordova application that responds to the deviceready event.
+        </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+            Apache Cordova Team
+        </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="cordova-background-geolocation-license" value="39357ce32035c7233921c11117dadb42ea6c0ae9e8b1b7f4ec7d63f8ffbeb821" />
+    <preference name="cordova-background-geolocation-orderId" value="2122820225" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+</widget>

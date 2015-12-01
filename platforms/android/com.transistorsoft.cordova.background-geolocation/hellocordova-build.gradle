@@ -1,0 +1,24 @@
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+    }
+}
+
+repositories{    
+  jcenter()
+  flatDir{
+      dirs 'src/android/libs'
+   }
+}
+
+dependencies {
+    compile 'com.google.android.gms:play-services-location:+'
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+    compile 'com.mcxiaoke.volley:library:1.0.18'
+    compile(name:'tslocationmanager', ext:'aar')
+}
